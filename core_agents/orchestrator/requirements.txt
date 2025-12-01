@@ -1,0 +1,117 @@
+# ============================================================================
+# Fed-PIP Orchestrator Agent - Complete Dependencies
+# Python 3.8+ required
+# ============================================================================
+
+# ============================================================================
+# CORE DEPENDENCIES - Anthropic ADK and Agent Framework
+# ============================================================================
+anthropic-tools-adk>=0.1.0      # A2A protocol, RemoteA2aAgent, LlmAgent wrapper
+anthropic>=0.21.0                # Anthropic API client
+
+# ============================================================================
+# ASYNC & NETWORKING - For parallel agent coordination
+# ============================================================================
+aiohttp>=3.9.0                   # Async HTTP client for A2A calls
+httpx>=0.26.0                    # Modern HTTP client with async support
+requests>=2.31.0                 # Synchronous HTTP (fallback)
+
+# ============================================================================
+# DATA HANDLING
+# ============================================================================
+pandas>=2.0.0                    # Data manipulation and analysis
+numpy>=1.24.0                    # Numerical computing
+python-dateutil>=2.8.0           # Date parsing and manipulation
+pytz>=2023.3                     # Timezone handling
+
+# ============================================================================
+# CACHING & PERFORMANCE
+# ============================================================================
+cachetools>=5.3.0                # TTL caching for API responses
+redis>=5.0.0                     # Optional: Distributed caching
+
+# ============================================================================
+# EXTERNAL AGENT DEPENDENCIES
+# ============================================================================
+
+# FRED Agent
+fredapi>=0.5.0                   # Official FRED API wrapper
+
+# BLS Agent  
+# (uses requests library - already included above)
+
+# Treasury Agent
+# (uses fredapi for Treasury data - already included above)
+
+# ============================================================================
+# CORE AGENT DEPENDENCIES
+# ============================================================================
+
+# Document Processor
+PyPDF2>=3.0.0                    # PDF parsing
+pdfplumber>=0.10.0               # Advanced PDF extraction
+python-docx>=1.1.0               # Word document handling
+
+# Policy Analyzer
+scikit-learn>=1.3.0              # Machine learning (classification)
+nltk>=3.8.0                      # Natural language processing
+sentence-transformers>=2.2.0     # Semantic similarity
+
+# Trend Tracker
+ruptures>=1.1.0                  # PELT change point detection
+scipy>=1.11.0                    # Statistical functions
+statsmodels>=0.14.0              # Time series analysis
+
+# Comparative Analyzer
+dtaidistance>=2.3.0              # Dynamic Time Warping
+fastdtw>=0.3.4                   # Fast DTW alternative
+
+# Report Generator
+reportlab>=4.0.0                 # PDF generation
+jinja2>=3.1.0                    # HTML templating
+matplotlib>=3.7.0                # Plotting and visualization
+seaborn>=0.13.0                  # Statistical visualization
+
+# ============================================================================
+# CONFIGURATION & ENVIRONMENT
+# ============================================================================
+python-dotenv>=1.0.0             # Environment variable management
+
+# ============================================================================
+# TESTING & DEVELOPMENT
+# ============================================================================
+pytest>=7.4.0                    # Testing framework
+pytest-asyncio>=0.21.0           # Async test support
+pytest-timeout>=2.1.0            # Test timeout handling
+pytest-cov>=4.1.0                # Code coverage
+pytest-mock>=3.12.0              # Mocking support
+
+# ============================================================================
+# OPTIONAL ENHANCEMENTS (uncomment if needed)
+# ============================================================================
+# uvloop>=0.19.0                 # Faster asyncio event loop (Linux/macOS only)
+# celery>=5.3.0                  # Distributed task queue
+# prometheus-client>=0.19.0      # Metrics and monitoring
+# sqlalchemy>=2.0.0              # Database ORM for state persistence
+
+# ============================================================================
+# VERSION COMPATIBILITY NOTES
+# ============================================================================
+# Python: 3.8, 3.9, 3.10, 3.11, 3.12
+# Last updated: November 2024
+# Status: Production Ready
+#
+# Installation:
+#   Standard: pip install -r requirements.txt
+#   Development: pip install -r requirements.txt && pip install -e .
+#   Production: pip install -r requirements.txt --no-cache-dir
+#
+# External Agent Dependencies:
+#   This orchestrator requires external agents (FRED, BLS, Treasury) to be
+#   running on their respective ports (8001, 8002, 8003). Each external agent
+#   has its own requirements.txt that must be installed separately.
+#
+# Core Agent Dependencies:
+#   Core agents (Document Processor, Policy Analyzer, Trend Tracker,
+#   Comparative Analyzer, Report Generator) are imported directly and their
+#   dependencies are included above.

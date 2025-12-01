@@ -1,0 +1,49 @@
+# Report Generator Dependencies
+# Install: pip install -r requirements.txt
+
+# Core dependencies
+pandas==2.2.0                  # Data manipulation
+numpy==1.26.3                  # Numerical operations
+python-dotenv==1.0.0           # Environment variables
+
+# ADK
+google-adk>=0.1.0              # Agent Development Kit
+
+# Document generation
+python-docx==1.1.0             # Word document creation
+reportlab==4.0.7               # PDF generation
+markdown==3.5.1                # Markdown parsing
+jinja2==3.1.2                  # Template engine
+
+# HTML/CSS
+weasyprint==60.1               # HTML to PDF conversion (alternative)
+beautifulsoup4==4.12.2         # HTML parsing
+
+# Visualization
+matplotlib==3.8.2              # Plotting
+seaborn==0.13.1                # Statistical visualization
+plotly==5.18.0                 # Interactive charts
+
+# Tables
+tabulate==0.9.0                # Pretty tables
+openpyxl==3.1.2                # Excel support (for tables)
+
+# Image handling
+Pillow==10.1.0                 # Image processing
+
+# Date utilities
+python-dateutil==2.8.2         # Date handling
+
+# Testing
+pytest==7.4.4                  # Testing framework
+pytest-asyncio==0.23.3         # Async testing
+
+# Note: Depends on all core agents
+# - document_processor
+# - policy_analyzer
+# - trend_tracker
+# - comparative_analyzer
+
+# Optional: For advanced PDF features
+# PyPDF2==3.0.1                # PDF manipulation
+# pdfkit==1.0.0                # HTML to PDF (requires wkhtmltopdf)

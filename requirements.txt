@@ -1,0 +1,189 @@
+# Fed Policy Intelligence Platform - Master Requirements
+# Complete dependencies for all agents
+# Install: pip install -r requirements.txt
+
+# =============================================================================
+# CORE DEPENDENCIES
+# =============================================================================
+
+# Data Science
+pandas==2.2.0
+numpy==1.26.3
+scipy==1.11.4
+scikit-learn==1.4.0
+statsmodels==0.14.1
+
+# Google ADK
+google-adk>=0.1.0
+
+# Environment
+python-dotenv==1.0.0
+
+# =============================================================================
+# EXTERNAL DATA AGENTS
+# =============================================================================
+
+# HTTP Requests
+requests==2.31.0
+urllib3==2.1.0
+
+# Data Validation
+pydantic==2.5.3
+
+# =============================================================================
+# DOCUMENT PROCESSING
+# =============================================================================
+
+# PDF Processing
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+
+# Text Processing
+beautifulsoup4==4.12.2
+lxml==5.1.0
+
+# NLP
+nltk==3.8.1
+spacy==3.7.2
+textblob==0.17.1
+sentence-transformers==2.2.2
+
+# =============================================================================
+# POLICY ANALYSIS
+# =============================================================================
+
+# Time Series
+ruptures==1.1.9
+
+# Statistical Tests
+scipy>=1.11.4
+
+# =============================================================================
+# REPORT GENERATION
+# =============================================================================
+
+# Document Generation
+python-docx==1.1.0
+reportlab==4.0.7
+markdown==3.5.1
+jinja2==3.1.2
+
+# HTML/CSS
+weasyprint==60.1
+
+# Visualization
+matplotlib==3.8.2
+seaborn==0.13.1
+plotly==5.18.0
+
+# Tables
+tabulate==0.9.0
+openpyxl==3.1.2
+
+# Images
+Pillow==10.1.0
+
+# =============================================================================
+# TESTING
+# =============================================================================
+
+pytest==7.4.4
+pytest-asyncio==0.23.3
+pytest-cov==4.1.0
+
+# =============================================================================
+# UTILITIES
+# =============================================================================
+
+# Dates
+python-dateutil==2.8.2
+
+# Logging
+loguru==0.7.2
+
+# Progress bars
+tqdm==4.66.1
+
+# YAML
+PyYAML==6.0.1
+
+# JSON
+orjson==3.9.10
+
+# =============================================================================
+# OPTIONAL DEPENDENCIES
+# =============================================================================
+
+# State Management (optional)
+redis==5.0.1
+sqlalchemy==2.0.25
+
+# Task Queue (optional)
+celery==5.3.4
+
+# Notebook Support
+jupyter==1.0.0
+ipykernel==6.28.0
+ipywidgets==8.1.1
+
+# Development Tools
+black==24.1.1
+flake8==7.0.0
+mypy==1.8.0
+isort==5.13.2
+
+# =============================================================================
+# PLATFORM INFO
+# =============================================================================
+
+# Platform: Fed Policy Intelligence Platform
+# Version: 1.0.0
+# Python: >=3.9
+# Agents: 12 (3 external, 6 core, 3 orchestration)
+# Tools: 42
+
+# =============================================================================
+# INSTALLATION NOTES
+# =============================================================================
+
+# Basic Installation:
+#   pip install -r requirements.txt
+
+# With Optional Dependencies:
+#   pip install -r requirements.txt
+#   pip install redis sqlalchemy celery
+
+# Development Installation:
+#   pip install -r requirements.txt
+#   pip install -e .
+
+# Virtual Environment (recommended):
+#   python -m venv venv
+#   source venv/bin/activate  # On Windows: venv\Scripts\activate
+#   pip install -r requirements.txt
+
+# Troubleshooting:
+#   If installation fails, try upgrading pip:
+#     pip install --upgrade pip
+#   
+#   Install in parts if needed:
+#     pip install pandas numpy scipy
+#     pip install google-adk
+#     pip install -r requirements.txt
+
+# =============================================================================
+# AGENT-SPECIFIC REQUIREMENTS
+# =============================================================================
+
+# Each agent also has its own requirements.txt:
+#   - external_agents/fred/requirements.txt
+#   - external_agents/bls/requirements.txt
+#   - external_agents/treasury/requirements.txt
+#   - core_agents/document_processor/requirements.txt
+#   - core_agents/policy_analyzer/requirements.txt
+#   - core_agents/trend_tracker/requirements.txt
+#   - core_agents/comparative_analyzer/requirements.txt
+#   - core_agents/report_generator/requirements.txt
+#   - core_agents/orchestrator/requirements.txt
+
+# These can be installed individually if you only need specific agents.

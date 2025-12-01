@@ -1,0 +1,33 @@
+# Policy Analyzer Dependencies
+# Install: pip install -r requirements.txt
+
+# Core dependencies
+pandas==2.2.0               # Time series analysis
+numpy==1.26.3               # Numerical operations
+python-dotenv==1.0.0        # Environment variables
+
+# ADK
+google-adk>=0.1.0           # Agent Development Kit
+
+# Time series & statistics
+scipy==1.11.4               # Statistical tests
+scikit-learn==1.4.0         # Clustering, change point detection
+statsmodels==0.14.1         # Time series analysis
+
+# Visualization (for generating charts in reports)
+matplotlib==3.8.2           # Plotting
+seaborn==0.13.1             # Statistical visualization
+
+# Text analysis
+spacy==3.7.2                # NLP (already installed for doc processor)
+textblob==0.17.1            # Sentiment analysis
+
+# Utilities
+python-dateutil==2.8.2      # Date handling
+
+# Optional: Development/Testing
+pytest==7.4.4               # Testing framework
+pytest-asyncio==0.23.3      # Async testing
+
+# Note: Depends on document_processor tools
+# Make sure document_processor is installed first

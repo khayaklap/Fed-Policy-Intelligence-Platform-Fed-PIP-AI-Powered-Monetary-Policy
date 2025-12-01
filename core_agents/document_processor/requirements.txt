@@ -1,0 +1,36 @@
+# Document Processor Dependencies
+# Install: pip install -r requirements.txt
+
+# Core dependencies
+pandas==2.2.0               # Data manipulation
+numpy==1.26.3               # Numerical operations
+python-dotenv==1.0.0        # Environment variables
+
+# ADK
+google-adk>=0.1.0           # Agent Development Kit
+
+# PDF Processing
+pypdf2==3.0.1               # Basic PDF reading
+pdfplumber==0.11.0          # Advanced PDF table extraction (BEST for tables)
+pymupdf==1.23.8             # Fast PDF text extraction (fitz)
+camelot-py==0.11.0          # Alternative table extraction
+
+# Text Processing
+spacy==3.7.2                # NLP for entity extraction
+transformers==4.36.0        # For advanced text analysis (optional)
+
+# Date/Time Processing
+python-dateutil==2.8.2      # Date parsing
+dateparser==1.2.0           # Flexible date parsing
+
+# Utilities
+regex==2023.12.25           # Advanced regex for pattern matching
+beautifulsoup4==4.12.3      # HTML parsing (for some Fed docs)
+requests==2.31.0            # Download documents
+
+# Optional: Development/Testing
+pytest==7.4.4               # Testing framework
+pytest-asyncio==0.23.3      # Async testing
+
+# Note: Install spacy language model after pip install
+# python -m spacy download en_core_web_sm

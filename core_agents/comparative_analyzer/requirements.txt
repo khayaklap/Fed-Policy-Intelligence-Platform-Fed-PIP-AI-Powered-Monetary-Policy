@@ -1,0 +1,37 @@
+# Comparative Analyzer Dependencies
+# Install: pip install -r requirements.txt
+
+# Core dependencies
+pandas==2.2.0                  # Data manipulation
+numpy==1.26.3                  # Numerical operations
+python-dotenv==1.0.0           # Environment variables
+
+# ADK
+google-adk>=0.1.0              # Agent Development Kit
+
+# Statistical analysis
+scipy==1.11.4                  # Statistical functions, distance metrics
+scikit-learn==1.4.0            # Clustering, similarity metrics
+statsmodels==0.14.1            # Statistical tests
+
+# Similarity & pattern matching
+dtaidistance==2.3.10           # Dynamic Time Warping (DTW)
+fastdtw==0.3.4                 # Fast DTW implementation
+
+# Visualization
+matplotlib==3.8.2              # Plotting
+seaborn==0.13.1                # Statistical visualization
+
+# Text similarity (for comparing Fed language)
+nltk==3.8.1                    # Natural language processing
+sentence-transformers==2.2.2   # Semantic similarity
+
+# Date utilities
+python-dateutil==2.8.2         # Date handling
+
+# Testing
+pytest==7.4.4                  # Testing framework
+pytest-asyncio==0.23.3         # Async testing
+
+# Note: Depends on document_processor, policy_analyzer, and trend_tracker
+# Make sure all three are installed first
